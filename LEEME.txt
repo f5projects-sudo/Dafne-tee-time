@@ -1,0 +1,1 @@
+Sube los 4 archivos principales (index.html, dafne-preview.png, dafne-main.png y musica.mp3) a la raíz del repositorio Dafne-tee-time. Reemplaza los anteriores cuando corresponda.

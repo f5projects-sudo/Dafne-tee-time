@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://f5projects-sudo.github.io/Dafne-tee-time/">
+<meta property="og:url" content="https://f5projects-sudo.github.io/Dafne-tee-time/">
+<meta property="og:site_name" content="Dafne’s Tee Time">
+
+<meta property="og:title" content="Dafne’s Tee Time 💗⛳">
+<meta property="og:description" content="A special invitation for my favorite girls">
+<meta property="og:image" content="https://f5projects-sudo.github.io/Dafne-tee-time/dafne-preview.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1536">
+<meta property="og:image:height" content="1024">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dafne’s Tee Time 💗⛳">
+<meta name="twitter:description" content="A special invitation for my favorite girls">
+<meta name="twitter:image" content="https://f5projects-sudo.github.io/Dafne-tee-time/dafne-preview.png">
+<title>Dafne’s Tee Time 💗⛳</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Italiana&family=Montserrat:wght@300;400;500;600;700&display=swap');
+:root{--pink:#efb9c3;--hot:#d96f85;--deep:#a95769;--cream:#fff8f3;--gold:#ae8b55;--sage:#6c8068;--ink:#604b4d}
+*{box-sizing:border-box}
+html,body{margin:0;background:#efc6ce;min-height:100%;overflow:hidden}
+body{font-family:Montserrat,Arial,sans-serif}
+.app{height:100svh;width:100%;position:relative;overflow:hidden;background:linear-gradient(145deg,#f5d2d8,#ffeceb 55%,#edc0ca)}
+.noise{position:absolute;inset:0;opacity:.14;pointer-events:none;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:9px 9px}
+.intro{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:1s ease;z-index:10}
+.word{position:absolute;white-space:nowrap;font-weight:700;text-transform:uppercase;letter-spacing:-2px;color:#fff7f5;opacity:0;text-shadow:0 8px 25px rgba(130,65,78,.12)}
+.w1{font-size:clamp(65px,18vw,135px);animation:fly1 5.8s ease-in-out infinite}
+.w2{font:500 clamp(56px,16vw,120px) "Italiana",serif;color:#bd6879;animation:fly2 5.8s .8s ease-in-out infinite}
+.w3{font-size:clamp(44px,13vw,100px);color:#fff;animation:fly3 5.8s 1.7s ease-in-out infinite}
+.w4{font:400 clamp(55px,15vw,112px) "Cormorant Garamond",serif;font-style:italic;color:#9f7b4d;text-transform:none;animation:fly4 5.8s 2.6s ease-in-out infinite}
+@keyframes fly1{0%,10%{opacity:0;transform:translateX(-110vw) rotate(-5deg)}20%,40%{opacity:1;transform:translateX(0) rotate(-5deg)}52%,100%{opacity:0;transform:translateX(110vw) rotate(-5deg)}}
+@keyframes fly2{0%,20%{opacity:0;transform:translateX(110vw) rotate(3deg)}32%,52%{opacity:1;transform:translateX(0) rotate(3deg)}64%,100%{opacity:0;transform:translateX(-110vw) rotate(3deg)}}
+@keyframes fly3{0%,36%{opacity:0;transform:scale(.35)}46%,65%{opacity:1;transform:scale(1)}76%,100%{opacity:0;transform:scale(1.8)}}
+@keyframes fly4{0%,52%{opacity:0;transform:translateY(60vh)}62%,82%{opacity:1;transform:translateY(0)}92%,100%{opacity:0;transform:translateY(-60vh)}}
+.cta{position:absolute;left:50%;bottom:9%;transform:translateX(-50%);width:min(330px,82%);text-align:center;z-index:12;animation:ctaIn 1s 4s both}
+@keyframes ctaIn{from{opacity:0;transform:translate(-50%,25px)}to{opacity:1;transform:translate(-50%,0)}}
+.cta .tiny{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#7f5860;margin-bottom:11px}
+.revealBtn{border:1px solid rgba(153,103,113,.55);background:rgba(255,248,244,.82);backdrop-filter:blur(8px);padding:16px 28px;border-radius:999px;color:#a15465;font:600 11px Montserrat;letter-spacing:2.5px;text-transform:uppercase;box-shadow:0 12px 30px rgba(112,61,73,.12);cursor:pointer}
+.revealBtn:active{transform:scale(.97)}
+.spark{position:absolute;font-size:28px;opacity:.55;animation:float 4s ease-in-out infinite}
+.s1{left:8%;top:15%}.s2{right:8%;top:20%;animation-delay:1s}.s3{left:13%;bottom:23%;animation-delay:2s}.s4{right:13%;bottom:27%;animation-delay:.4s}
+@keyframes float{50%{transform:translateY(-14px) rotate(10deg)}}
+
+/* reveal */
+.reveal{position:absolute;inset:0;z-index:5;opacity:0;pointer-events:none;background:#f7dfe2;overflow:auto;transition:.8s ease}
+.open .intro{opacity:0;transform:scale(1.08);pointer-events:none}
+.open .reveal{opacity:1;pointer-events:auto}
+.burst{height:100svh;min-height:680px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.bgphoto{position:absolute;inset:0;background-image:linear-gradient(to bottom,rgba(255,236,238,.38),rgba(255,248,243,.95) 76%),url("background.png");background-size:cover;background-position:center;filter:saturate(.9)}
+.bigtype{position:absolute;font:600 clamp(75px,24vw,170px)/.75 "Cormorant Garamond",serif;color:rgba(216,113,133,.14);transform:rotate(-9deg);white-space:nowrap}
+.card{position:relative;width:min(390px,88%);background:rgba(255,250,246,.93);border:1px solid #c9a56f;box-shadow:0 28px 65px rgba(114,66,72,.22);padding:38px 28px 34px;text-align:center;transform:translateY(110vh) rotate(7deg) scale(.75);animation:none}
+.open .card{animation:cardReveal 1.25s .35s cubic-bezier(.18,.85,.25,1.05) forwards}
+@keyframes cardReveal{55%{transform:translateY(-25px) rotate(-2deg) scale(1.03)}100%{transform:translateY(0) rotate(0) scale(1)}}
+.ribbon{font-size:34px;color:#d97689}
+.kicker{font-size:9px;letter-spacing:3.5px;text-transform:uppercase;color:#9d7c4e;margin-top:4px}
+.title{font:500 42px/1 "Italiana",serif;color:#96764b;margin:9px 0 0}
+.title em{display:block;font:400 50px/.95 "Cormorant Garamond";font-style:italic;color:#d16f83}
+.tag{font:400 17px/1.35 "Cormorant Garamond";font-style:italic;color:#775b60;margin:12px auto 19px;max-width:270px}
+.rule{width:55px;height:1px;background:#bd9b67;margin:18px auto}
+.label{font-size:8px;letter-spacing:2.6px;text-transform:uppercase;color:#a37c4b;margin-top:15px}
+.value{font:500 20px "Cormorant Garamond";color:#5f554b;margin-top:4px}
+.dress{margin:22px 0 15px;padding:15px;background:#f5d7dc;border-radius:15px;border:1px solid #e8b8c1}
+.dress b{display:block;font:400 27px "Cormorant Garamond";font-style:italic;color:#d0697e}
+.dress span{font-size:11px;letter-spacing:4px;color:#755f4e}
+.note{font:400 17px/1.4 "Cormorant Garamond";font-style:italic;color:#7a5b61;margin:20px auto 0}
+.music{position:fixed;right:16px;top:max(16px,env(safe-area-inset-top));z-index:30;width:42px;height:42px;border-radius:50%;border:1px solid #d7aeb5;background:rgba(255,248,245,.88);display:none;place-items:center;color:#bb6677;box-shadow:0 5px 18px #83566125}
+.open .music{display:grid}
+.music.playing{animation:pulse 1.4s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(216,113,133,.12)}}
+.confetti{position:absolute;width:10px;height:18px;border-radius:7px;background:#d67889;opacity:0}
+.open .c1{left:10%;top:5%;animation:fall 3s .3s infinite}.open .c2{left:27%;top:-5%;background:#c5a268;animation:fall 3.5s .8s infinite}.open .c3{right:20%;top:0;background:#fff;animation:fall 3.2s .5s infinite}.open .c4{right:7%;top:-8%;background:#aab29b;animation:fall 3.8s 1.2s infinite}
+@keyframes fall{0%{opacity:0;transform:translateY(-30px) rotate(0)}15%{opacity:.8}100%{opacity:0;transform:translateY(105vh) rotate(420deg)}}
+
+/* countdown + RSVP */
+.countdown{margin:20px 0 6px;padding:15px 8px;border-top:1px solid #d8b98d;border-bottom:1px solid #d8b98d}
+.countTitle{font-size:8px;letter-spacing:2.8px;text-transform:uppercase;color:#a37c4b;margin-bottom:10px}
+.countGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.countBox{padding:7px 2px;background:#fff7f3;border-radius:10px;border:1px solid #efd5d8}
+.countNum{display:block;font:500 23px "Cormorant Garamond";color:#c86f80;line-height:1}
+.countLab{display:block;font-size:6px;letter-spacing:1.2px;text-transform:uppercase;color:#8d766e;margin-top:4px}
+.rsvp{margin-top:23px;padding-top:2px}
+.rsvpTitle{font:400 29px "Cormorant Garamond";font-style:italic;color:#d0697e}
+.rsvpSub{font:400 15px/1.35 "Cormorant Garamond";color:#775e61;margin:4px auto 12px;max-width:270px}
+.rsvpActions{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.rsvpBtn{min-height:43px;border-radius:999px;padding:11px 16px;border:1px solid #d7a8b1;background:#fff8f5;color:#ad5f70;font:500 9px Montserrat;letter-spacing:1.2px;text-transform:uppercase;cursor:pointer}
+.rsvpBtn.primary{background:#d8788b;color:white;border-color:#d8788b}
+.rsvpMsg{min-height:22px;margin-top:9px;font:400 15px "Cormorant Garamond";font-style:italic;color:#84656a}
+/* falling botanical layer */
+.fallingLayer{position:absolute;inset:0;z-index:22;pointer-events:none;overflow:hidden;display:none}
+.open .fallingLayer{display:block}
+.leaf{position:absolute;top:-14vh;opacity:.78;will-change:transform;animation-name:leafFall;animation-timing-function:linear;animation-iteration-count:infinite}
+.leaf::before{content:"";display:block;width:15px;height:28px;border-radius:100% 0 100% 0;background:#8fa186;box-shadow:inset 2px 1px 0 rgba(255,255,255,.22)}
+.leaf.pink::before{background:#df9aaa;width:12px;height:20px;border-radius:80% 20% 80% 20%}
+.leaf.gold::before{background:#c8aa73;width:10px;height:22px}
+@keyframes leafFall{
+  0%{transform:translate3d(0,-12vh,0) rotate(0deg)}
+  25%{transform:translate3d(24px,25vh,0) rotate(110deg)}
+  50%{transform:translate3d(-18px,52vh,0) rotate(220deg)}
+  75%{transform:translate3d(30px,80vh,0) rotate(320deg)}
+  100%{transform:translate3d(-12px,116vh,0) rotate(470deg)}
+}
+
+
+/* FINAL MOBILE RESPONSIVE FIXES */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+body{overflow-y:auto}
+.app{min-height:100svh;height:auto;width:100%;max-width:100%;overflow-x:hidden;overflow-y:visible}
+.intro{position:relative;height:100svh;min-height:620px;width:100%;max-width:100%;overflow:hidden}
+.word{
+  left:5%;right:5%;width:90%;max-width:90%;
+  white-space:normal;text-align:center;line-height:.9;letter-spacing:-1px;
+  overflow-wrap:normal;word-break:normal;
+}
+.w1{font-size:clamp(48px,15vw,82px)}
+.w2{font-size:clamp(42px,13vw,72px)}
+.w3{font-size:clamp(39px,11.5vw,65px)}
+.w4{font-size:clamp(46px,13vw,74px)}
+@keyframes fly1{0%,10%{opacity:0;transform:translateX(-105%) rotate(-4deg)}20%,40%{opacity:1;transform:translateX(0) rotate(-4deg)}52%,100%{opacity:0;transform:translateX(105%) rotate(-4deg)}}
+@keyframes fly2{0%,20%{opacity:0;transform:translateX(105%) rotate(3deg)}32%,52%{opacity:1;transform:translateX(0) rotate(3deg)}64%,100%{opacity:0;transform:translateX(-105%) rotate(3deg)}}
+.reveal{position:relative;inset:auto;width:100%;max-width:100%;height:auto;overflow:visible;display:none}
+.open .intro{display:none}
+.open .reveal{display:block;opacity:1;pointer-events:auto}
+.burst{
+  min-height:100svh;height:auto;width:100%;max-width:100%;
+  padding:28px 14px 80px;align-items:flex-start;overflow:hidden
+}
+.bgphoto{position:absolute;inset:0}
+.bigtype{font-size:clamp(58px,18vw,105px);max-width:100%;overflow:hidden}
+.card{
+  width:min(92vw,390px);max-width:390px;
+  margin:18px auto 0;padding:32px 22px 30px;
+  transform:translateY(100px) rotate(4deg) scale(.92)
+}
+.title{font-size:clamp(34px,10vw,42px)}
+.title em{font-size:clamp(42px,12vw,50px)}
+.value{font-size:clamp(18px,5.5vw,20px)}
+.countGrid{gap:5px}
+.countBox{min-width:0;padding:8px 1px}
+.countNum{font-size:clamp(18px,6vw,23px)}
+.countLab{font-size:clamp(5px,1.6vw,6px);letter-spacing:.7px}
+.rsvp{padding-bottom:10px}
+.rsvpActions{display:grid;grid-template-columns:1fr;gap:10px;width:100%}
+.rsvpBtn{width:100%;min-height:48px;font-size:10px}
+.fallingLayer{position:fixed;inset:0;z-index:22}
+.music{position:fixed}
+@media(max-width:360px){
+  .card{width:94vw;padding-left:17px;padding-right:17px}
+  .w1{font-size:46px}.w2{font-size:39px}.w3{font-size:36px}.w4{font-size:43px}
+  .countGrid{grid-template-columns:repeat(2,1fr)}
+}
+
+
+/* TAP / REVEAL HOTFIX */
+.intro{z-index:40;pointer-events:auto}
+.intro .word,.intro .spark,.noise{pointer-events:none}
+.cta{z-index:100;pointer-events:auto}
+.revealBtn{
+  position:relative;z-index:110;pointer-events:auto;
+  touch-action:manipulation;-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.reveal{z-index:10}
+.open .intro{visibility:hidden;opacity:0;pointer-events:none}
+.open .reveal{display:block!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+
+
+/* TRUE DOCUMENT SCROLL FIX */
+html{height:auto!important;min-height:100%;overflow-x:hidden!important;overflow-y:auto!important}
+body{height:auto!important;min-height:100%;overflow-x:hidden!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch}
+.app{height:auto!important;min-height:100svh!important;overflow:visible!important;position:relative!important}
+.app.open{overflow:visible!important;height:auto!important;min-height:100svh!important}
+.open .reveal{
+  position:relative!important;
+  inset:auto!important;
+  height:auto!important;
+  min-height:100svh!important;
+  overflow:visible!important;
+  display:block!important;
+}
+.open .burst{
+  height:auto!important;
+  min-height:100svh!important;
+  overflow:visible!important;
+  padding-bottom:110px!important;
+}
+.open .card{
+  height:auto!important;
+  min-height:0!important;
+  overflow:visible!important;
+  margin-bottom:40px!important;
+}
+.open .bgphoto{position:absolute!important;min-height:100%;height:100%!important}
+.rsvp{display:block!important;visibility:visible!important;opacity:1!important;margin-top:26px!important;padding-bottom:22px!important}
+.rsvpActions{margin-top:14px!important}
+
+
+.dressGuide{
+  margin-top:13px;
+  font:400 15px/1.55 "Cormorant Garamond",serif;
+  color:#6f6260;
+  letter-spacing:.2px;
+}
+.noPink{
+  width:88%;
+  margin:13px auto 0;
+  padding-top:11px;
+  border-top:1px solid rgba(174,139,85,.35);
+  font:400 16px/1.25 "Cormorant Garamond",serif;
+  font-style:italic;
+  color:#b86175;
+}
+
+
+.langToggle{
+ position:fixed;z-index:150;top:max(14px,env(safe-area-inset-top));left:14px;
+ display:flex;align-items:center;gap:6px;padding:7px 10px;border-radius:999px;
+ background:rgba(255,248,245,.9);border:1px solid rgba(215,174,181,.8);
+ box-shadow:0 4px 16px rgba(100,60,70,.12);font:600 10px Montserrat;color:#a36572;
+}
+.langBtn{border:0;background:transparent;color:#9d7d83;padding:3px 4px;font:600 10px Montserrat;cursor:pointer}
+.langBtn.active{color:#c65f75;text-decoration:underline;text-underline-offset:3px}
+
+
+/* APPROVED DAFNE VISUAL INTEGRATION */
+.dafneFeature{
+  width:calc(100% + 44px);
+  margin:-32px -22px 25px;
+  height:360px;
+  overflow:hidden;
+  position:relative;
+  border-bottom:1px solid rgba(174,139,85,.45);
+  background:#f8dfe3;
+}
+.dafneFeature img{
+  width:100%;
+  height:auto;
+  display:block;
+  transform:translateY(0);
+}
+.dafneFeature:after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:90px;
+  background:linear-gradient(to bottom,transparent,rgba(255,250,246,.98));
+}
+@media(max-width:390px){
+ .dafneFeature{height:330px;width:calc(100% + 34px);margin-left:-17px;margin-right:-17px}
+}
+@media(min-width:430px){
+ .dafneFeature{height:380px}
+}
+/* Leaves always above the integrated image/card */
+.fallingLayer{z-index:220!important}
+.music{z-index:250!important}
+.langToggle{z-index:260!important}
+
+</style>
+</head>
+<body>
+<div class="app" id="app">
+<div class="noise"></div>
+<div class="langToggle" role="group" aria-label="Language">
+<button type="button" class="langBtn active" data-lang="en">EN</button>
+<span>|</span>
+<button type="button" class="langBtn" data-lang="es">ES</button>
+</div>
+<section class="intro">
+  <div class="spark s1">🎀</div><div class="spark s2">⛳</div><div class="spark s3">✦</div><div class="spark s4">♡</div>
+  <div class="word w1" data-i18n="w1">HEY GIRLS!</div>
+  <div class="word w2" data-i18n="w2">GOLF CHIC</div>
+  <div class="word w3">PUERTO VALLARTA</div>
+  <div class="word w4" data-i18n="w4">is calling…</div>
+  <div class="cta">
+    <div class="tiny" data-i18n="tiny">Something special is waiting for you</div>
+    <button class="revealBtn" id="revealBtn" type="button" aria-label="Reveal invitation"><span data-i18n="revealBtn">Tap to Reveal ✦</span></button>
+  </div>
+</section>
+
+<section class="reveal" id="reveal">
+  <div class="burst">
+    <div class="bgphoto"></div>
+    <div class="bigtype">TEE TIME</div>
+    <i class="confetti c1"></i><i class="confetti c2"></i><i class="confetti c3"></i><i class="confetti c4"></i>
+    <article class="card">
+
+<div class="dafneFeature" aria-label="Dafne Tee Time visual">
+  <img src="dafne-main.png" alt="Dafne's Tee Time golf chic visual">
+</div>
+
+      <div class="ribbon">୨୧</div>
+      <div class="kicker" data-i18n="kicker">You're invited to</div>
+      <div class="title">DAFNE'S <em>Tee Time</em></div>
+      <div class="tag" data-i18n="tag">A special morning with my favorite girls.</div>
+      <div class="rule"></div>
+      <div class="label" data-i18n="dateLabel">Save the date</div><div class="value" data-i18n="dateValue">Saturday · January 16, 2027</div>
+      <div class="label" data-i18n="destinationLabel">Destination</div><div class="value">Puerto Vallarta, Jalisco</div>
+      <div class="label" data-i18n="meetLabel">Meet me at</div><div class="value">Fredy's Tucan</div>
+      <div class="label" data-i18n="timeLabel">Tee Time</div><div class="value">10:00 AM</div>
+      <div class="dress">
+          <b data-i18n="dressLabel">Dress Code</b>
+          <span>GOLF CHIC ⛳</span>
+          <div class="dressGuide" data-i18n="dressGuide">Skirts · Skorts · Golf Dresses · Tailored Shorts<br>Polos · Visors · Sneakers</div>
+          <div class="noPink" data-i18n="noPink">Please save the pink for the bride-to-be ♡</div>
+        </div>
+      
+      <div class="countdown">
+        <div class="countTitle" data-i18n="countTitle">Countdown to Tee Time</div>
+        <div class="countGrid">
+          <div class="countBox"><span class="countNum" id="days">--</span><span class="countLab" data-i18n="days">Days</span></div>
+          <div class="countBox"><span class="countNum" id="hours">--</span><span class="countLab" data-i18n="hours">Hours</span></div>
+          <div class="countBox"><span class="countNum" id="mins">--</span><span class="countLab" data-i18n="minutes">Minutes</span></div>
+          <div class="countBox"><span class="countNum" id="secs">--</span><span class="countLab" data-i18n="seconds">Seconds</span></div>
+        </div>
+      </div>
+      <div class="note" data-i18n="note">Good friends. Great views. And a little surprise I've been saving just for you… ♡</div>
+      <div class="rsvp">
+        <div class="rsvpTitle" data-i18n="rsvpTitle">Will you join me?</div>
+        <div class="rsvpSub" data-i18n="rsvpSub">Please confirm your attendance so I can save you a seat at our tee time.</div>
+        <div class="rsvpActions">
+          <button class="rsvpBtn primary" type="button" id="yesRsvp"><span data-i18n="yesBtn">I'll be there ♡</span></button>
+          <button class="rsvpBtn" type="button" id="noRsvp"><span data-i18n="noBtn">Can't make it</span></button>
+        </div>
+        <div class="rsvpMsg" id="rsvpMsg"></div>
+      </div>
+
+    </article>
+  </div>
+</section>
+
+<div class="fallingLayer" aria-hidden="true">
+<i class="leaf pink" style="left:3%;animation-duration:6.5s;animation-delay:0.0s;transform:scale(0.65)"></i>
+<i class="leaf" style="left:20%;animation-duration:7.25s;animation-delay:-0.85s;transform:scale(0.77)"></i>
+<i class="leaf" style="left:37%;animation-duration:8.0s;animation-delay:-1.7s;transform:scale(0.89)"></i>
+<i class="leaf" style="left:54%;animation-duration:8.75s;animation-delay:-2.55s;transform:scale(1.01)"></i>
+<i class="leaf" style="left:71%;animation-duration:9.5s;animation-delay:-3.4s;transform:scale(1.13)"></i>
+<i class="leaf pink" style="left:88%;animation-duration:10.25s;animation-delay:-4.25s;transform:scale(0.65)"></i>
+<i class="leaf" style="left:5%;animation-duration:11.0s;animation-delay:-5.1s;transform:scale(0.77)"></i>
+<i class="leaf gold" style="left:22%;animation-duration:11.75s;animation-delay:-5.95s;transform:scale(0.89)"></i>
+<i class="leaf" style="left:39%;animation-duration:6.5s;animation-delay:-6.8s;transform:scale(1.01)"></i>
+<i class="leaf" style="left:56%;animation-duration:7.25s;animation-delay:-7.6499999999999995s;transform:scale(1.13)"></i>
+<i class="leaf pink" style="left:73%;animation-duration:8.0s;animation-delay:-8.5s;transform:scale(0.65)"></i>
+<i class="leaf" style="left:90%;animation-duration:8.75s;animation-delay:-9.35s;transform:scale(0.77)"></i>
+<i class="leaf" style="left:7%;animation-duration:9.5s;animation-delay:0.0s;transform:scale(0.89)"></i>
+<i class="leaf" style="left:24%;animation-duration:10.25s;animation-delay:-0.85s;transform:scale(1.01)"></i>
+<i class="leaf gold" style="left:41%;animation-duration:11.0s;animation-delay:-1.7s;transform:scale(1.13)"></i>
+<i class="leaf pink" style="left:58%;animation-duration:11.75s;animation-delay:-2.55s;transform:scale(0.65)"></i>
+<i class="leaf" style="left:75%;animation-duration:6.5s;animation-delay:-3.4s;transform:scale(0.77)"></i>
+<i class="leaf" style="left:92%;animation-duration:7.25s;animation-delay:-4.25s;transform:scale(0.89)"></i>
+<i class="leaf" style="left:9%;animation-duration:8.0s;animation-delay:-5.1s;transform:scale(1.01)"></i>
+<i class="leaf" style="left:26%;animation-duration:8.75s;animation-delay:-5.95s;transform:scale(1.13)"></i>
+<i class="leaf pink" style="left:43%;animation-duration:9.5s;animation-delay:-6.8s;transform:scale(0.65)"></i>
+<i class="leaf gold" style="left:60%;animation-duration:10.25s;animation-delay:-7.6499999999999995s;transform:scale(0.77)"></i>
+<i class="leaf" style="left:77%;animation-duration:11.0s;animation-delay:-8.5s;transform:scale(0.89)"></i>
+<i class="leaf" style="left:94%;animation-duration:11.75s;animation-delay:-9.35s;transform:scale(1.01)"></i>
+</div>
+<button class="music" id="musicBtn" onclick="toggleMusic()" aria-label="Toggle music">♫</button>
+<audio id="song" preload="auto" loop src="musica.mp3"></audio>
+</div>
+<script>
+const song=document.getElementById('song'), app=document.getElementById('app'), mb=document.getElementById('musicBtn');
+song.volume=.68;
+function revealInvite(){
+  app.classList.add('open');
+  document.documentElement.style.overflowY='auto';
+  document.body.style.overflowY='auto';
+  document.body.style.height='auto';
+  app.style.height='auto';
+  app.style.overflow='visible';
+  const intro=document.querySelector('.intro');
+  const reveal=document.getElementById('reveal');
+  if(intro){ intro.style.display='none'; }
+  if(reveal){
+    reveal.style.display='block';
+    reveal.style.opacity='1';
+    reveal.style.pointerEvents='auto';
+  }
+  song.play().then(()=>mb.classList.add('playing')).catch(()=>{});
+  try{ window.scrollTo(0,0); }catch(e){}
+}
+const revealBtn=document.getElementById('revealBtn');
+if(revealBtn){
+  revealBtn.addEventListener('click',function(e){e.preventDefault();revealInvite();});
+}
+function toggleMusic(){
+  if(song.paused){song.play();mb.classList.add('playing')}else{song.pause();mb.classList.remove('playing')}
+}
+
+// Live countdown to Jan 12, 2027 in Puerto Vallarta / Guadalajara time (UTC-6)
+function updateCountdown(){
+  const target = new Date('2027-01-16T10:00:00-06:00').getTime();
+  let diff = Math.max(0, target - Date.now());
+  const d = Math.floor(diff/86400000); diff%=86400000;
+  const h = Math.floor(diff/3600000); diff%=3600000;
+  const m = Math.floor(diff/60000); diff%=60000;
+  const s = Math.floor(diff/1000);
+  document.getElementById('days').textContent=String(d);
+  document.getElementById('hours').textContent=String(h).padStart(2,'0');
+  document.getElementById('mins').textContent=String(m).padStart(2,'0');
+  document.getElementById('secs').textContent=String(s).padStart(2,'0');
+}
+updateCountdown(); setInterval(updateCountdown,1000);
+
+const rsvpMsg=document.getElementById('rsvpMsg');
+const dafneWhatsApp='523337784397';
+function sendRSVP(attending){
+  const es=currentLang==='es';
+  const message = attending
+    ? (es ? `¡Hola Dafne! 💗⛳
+
+¡Confirmo mi asistencia a Dafne’s Tee Time!
+16 de enero de 2027 · 10:00 AM · Puerto Vallarta
+
+¡Nos vemos! 💕`
+          : `Hi Dafne! 💗⛳
+
+I’ll be there for Dafne’s Tee Time!
+January 16, 2027 · 10:00 AM · Puerto Vallarta
+
+Can’t wait! 💕`)
+    : (es ? `¡Hola Dafne! 💗
+
+Muchas gracias por invitarme a Dafne’s Tee Time el 16 de enero de 2027. Desafortunadamente no podré acompañarte. 💕`
+          : `Hi Dafne! 💗
+
+Thank you so much for inviting me to Dafne’s Tee Time on January 16, 2027. Unfortunately, I won’t be able to make it. 💕`);
+  rsvpMsg.textContent = es ? "Abriendo WhatsApp… ♡" : "Opening WhatsApp… ♡";
+  window.location.href='https://wa.me/'+dafneWhatsApp+'?text='+encodeURIComponent(message);
+}
+document.getElementById('yesRsvp').addEventListener('click',()=>sendRSVP(true));
+document.getElementById('noRsvp').addEventListener('click',()=>sendRSVP(false));
+
+
+let currentLang='en';
+const translations={
+ en:{
+  w1:"HEY GIRLS!",w2:"GOLF CHIC",w4:"is calling…",tiny:"Something special is waiting for you",
+  revealBtn:"Tap to Reveal ✦",kicker:"You're invited to",tag:"A special morning with my favorite girls.",
+  dateLabel:"Save the date",dateValue:"Saturday · January 16, 2027",destinationLabel:"Destination",
+  meetLabel:"Meet me at",timeLabel:"Tee Time",dressLabel:"Dress Code",
+  dressGuide:"Skirts · Skorts · Golf Dresses · Tailored Shorts<br>Polos · Visors · Sneakers",
+  noPink:"Please save the pink for the bride-to-be ♡",countTitle:"Countdown to Tee Time",
+  days:"Days",hours:"Hours",minutes:"Minutes",seconds:"Seconds",
+  note:"Good friends. Great views. And a little surprise I've been saving just for you… ♡",
+  rsvpTitle:"Will you join me?",rsvpSub:"Please confirm your attendance so I can save you a seat at our tee time.",
+  yesBtn:"I'll be there ♡",noBtn:"Can't make it"
+ },
+ es:{
+  w1:"¡HOLA, CHICAS!",w2:"GOLF CHIC",w4:"te está llamando…",tiny:"Algo muy especial las está esperando",
+  revealBtn:"Descubre la invitación ✦",kicker:"Estás invitada a",tag:"Una mañana especial con mis chicas favoritas.",
+  dateLabel:"Reserva la fecha",dateValue:"Sábado · 16 de enero de 2027",destinationLabel:"Destino",
+  meetLabel:"Nos vemos en",timeLabel:"Hora",dressLabel:"Código de vestimenta",
+  dressGuide:"Faldas · Skorts · Vestidos de golf · Shorts sastre<br>Polos · Viseras · Tenis",
+  noPink:"El rosa está reservado para la futura novia ♡",countTitle:"Cuenta regresiva para el Tee Time",
+  days:"Días",hours:"Horas",minutes:"Minutos",seconds:"Segundos",
+  note:"Buenas amigas. Vistas increíbles. Y una pequeña sorpresa que he estado guardando para ustedes… ♡",
+  rsvpTitle:"¿Me acompañas?",rsvpSub:"Por favor confirma tu asistencia para reservarte un lugar en nuestro tee time.",
+  yesBtn:"¡Ahí estaré! ♡",noBtn:"No podré asistir"
+ }
+};
+function setLanguage(lang){
+ currentLang=lang;
+ document.documentElement.lang=lang;
+ document.querySelectorAll('[data-i18n]').forEach(el=>{
+   const key=el.dataset.i18n, val=translations[lang][key];
+   if(val!==undefined) el.innerHTML=val;
+ });
+ document.querySelectorAll('.langBtn').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
+}
+document.querySelectorAll('.langBtn').forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.lang)));
+setLanguage('en');
+
+</script>
+</body>
+</html>
